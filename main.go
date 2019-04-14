@@ -29,7 +29,7 @@ func main() {
 
 	// open webcam
 	if len(os.Args) < 2 {
-		fmt.Println(">> device /dev/vide0 (default)")
+		fmt.Println(">> device /dev/video0 (default)")
 		webcam, err = gocv.VideoCaptureDevice(0)
 	} else {
 		fmt.Println(">> file/url :: " + os.Args[1])
